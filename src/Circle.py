@@ -6,6 +6,8 @@ class Circle(Figure):
     NAME = 'Circle'
 
     def __init__(self, r):
+        if r < 0:
+            raise ValueError("Радиус круга должен быть положительным числом.")
         self.r = r
 
     def area(self):

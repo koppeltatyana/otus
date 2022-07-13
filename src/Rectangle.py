@@ -5,6 +5,8 @@ class Rectangle(Figure):
     NAME = 'Rectangle'
 
     def __init__(self, a, b):
+        if a < 0 or b < 0:
+            raise ValueError("Все стороны прямоугольника должны быть положительными числами.")
         self.a = a
         self.b = b
 
