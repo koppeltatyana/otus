@@ -1,9 +1,11 @@
 class Figure:
     NAME = None
 
+    @property
     def area(self):
         return True
 
+    @property
     def perimeter(self):
         return True
 

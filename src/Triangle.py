@@ -15,9 +15,11 @@ class Triangle(Figure):
         self.b = b
         self.c = c
 
+    @property
     def perimeter(self):
         return self.a + self.b + self.c
 
+    @property
     def area(self):
-        semiperimeter = self.perimeter() / 2
+        semiperimeter = self.perimeter / 2
         return sqrt(semiperimeter * (semiperimeter - self.a) * (semiperimeter - self.b) * (semiperimeter - self.c))

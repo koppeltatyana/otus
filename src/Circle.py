@@ -10,8 +10,10 @@ class Circle(Figure):
             raise ValueError("Радиус круга должен быть положительным числом.")
         self.r = r
 
+    @property
     def area(self):
         return pi * self.r ** 2
 
+    @property
     def perimeter(self):
         return 2 * pi * self.r

@@ -1,3 +1,6 @@
+import pytest
+
+
 class TestPerimeterAreaCalculations:
     """
     Тесты на проверку функции "add_area"
