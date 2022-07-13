@@ -10,7 +10,9 @@ class Figure:
         return True
 
     def add_area(self, figure):
-        return self.area() + figure.area()
+        if not isinstance(figure, Figure):
+            raise ValueError("В качестве параметра в функцию требуется передавать экземпляр фигуры.")
+        return float(self.area) + float(figure.area)
 
     def __repr__(self):
         return f'Экземпляр класса "{self.NAME}"'
