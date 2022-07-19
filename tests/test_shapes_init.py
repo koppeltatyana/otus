@@ -1,9 +1,6 @@
 import pytest
 
-from src.Triangle import Triangle
-from src.Square import Square
-from src.Rectangle import Rectangle
-from src.Circle import Circle
+from src import Circle, Square, Triangle, Rectangle
 
 
 class TestShapesInit:
