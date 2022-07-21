@@ -5,7 +5,7 @@ class Square(Figure):
     NAME = 'Square'
 
     def __init__(self, a):
-        if a < 0:
+        if a <= 0:
             raise ValueError("Стороны квадрата должны быть положительными числами.")
         self.a = a
 
